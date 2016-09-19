@@ -35347,6 +35347,7 @@
 	const platform_browser_1 = __webpack_require__(21);
 	const forms_1 = __webpack_require__(24);
 	const app_component_1 = __webpack_require__(28);
+	const detail_component_1 = __webpack_require__(31);
 	let AppModule = class AppModule {
 	};
 	AppModule = __decorate([
@@ -35356,7 +35357,8 @@
 	            forms_1.FormsModule
 	        ],
 	        declarations: [
-	            app_component_1.AppComponent
+	            app_component_1.AppComponent,
+	            detail_component_1.DetailComponent
 	        ],
 	        bootstrap: [app_component_1.AppComponent]
 	    }), 
@@ -40344,6 +40346,48 @@
 	    { id: 3, name: 'ccccc' },
 	    { id: 4, name: 'ddddd' }
 	];
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	const core_1 = __webpack_require__(3);
+	const item_1 = __webpack_require__(32);
+	let DetailComponent = class DetailComponent {
+	};
+	__decorate([
+	    core_1.Input(), 
+	    __metadata('design:type', item_1.Item)
+	], DetailComponent.prototype, "item", void 0);
+	DetailComponent = __decorate([
+	    core_1.Component({
+	        selector: 'item-detail',
+	        templateUrl: './app/detail/detail.component.tpl.html'
+	    }), 
+	    __metadata('design:paramtypes', [])
+	], DetailComponent);
+	exports.DetailComponent = DetailComponent;
+
+
+/***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	"use strict";
+	class Item {
+	}
+	exports.Item = Item;
 
 
 /***/ }

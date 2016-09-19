@@ -11,7 +11,5 @@
         </ul>
 
     </div>
-    <div *ngIf="selectedItem">
-         <span>{{selectedItem.name}}</span>
-    </div>
+    <item-detail [item]="selectedItem"></item-detail>
 </div>
