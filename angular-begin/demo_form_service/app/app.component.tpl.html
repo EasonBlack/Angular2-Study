@@ -1,0 +1,17 @@
+
+<div>
+    <div class="left">
+        <h2>Items</h2>
+        <ul>
+            <li *ngFor="let item of items"
+                [class.selected]="item === selectedItem"
+                (click)="onSelect(item)">
+                <span>{{item.id}}</span> {{item.name}}
+            </li>
+        </ul>
+
+    </div>
+    <div *ngIf="selectedItem">
+         <span>{{selectedItem.name}}</span>
+    </div>
+</div>
