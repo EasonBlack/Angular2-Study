@@ -8,24 +8,24 @@ import {OrderComponent} from './project/order/order.component';
 
 
 const appRoutes:Routes = [
-    {path: '', component: DashboardComponent},
-    {path: 'dashboard', component: DashboardComponent},
-    {
-        path: 'project', component: ProjectComponent,
-        children: [
-            {
-                path: '',
-                component: InfoComponent
-            },{
-                path: 'info',
-                component: InfoComponent
-            },{
-                path: 'order',
-                component: OrderComponent
-            }
-
-        ]
-    },
+    // {path: '', component: DashboardComponent},
+    // {path: 'dashboard', component: DashboardComponent},
+    // {
+    //     path: 'project', component: ProjectComponent,
+    //     children: [
+    //         {
+    //             path: '',
+    //             component: InfoComponent
+    //         },{
+    //             path: 'info',
+    //             component: InfoComponent
+    //         },{
+    //             path: 'order',
+    //             component: OrderComponent
+    //         }
+    //
+    //     ]
+    // },
 ];
 
 
