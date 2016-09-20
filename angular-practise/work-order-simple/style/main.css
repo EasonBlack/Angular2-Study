@@ -19,11 +19,25 @@ a, a:visited, a:hover, a:active {
 img {
   vertical-align: middle; }
 
+.flex__row {
+  display: flex;
+  flex-direction: row; }
+
+.flex__1 {
+  flex: 1; }
+
+.flex__300 {
+  width: 300px; }
+
 .top-nav {
   height: 50px;
   line-height: 50px;
   width: 100%;
   background-color: steelblue;
-  display: flex; }
+  display: flex;
+  flex-direction: row; }
+  .top-nav li {
+    display: block;
+    width: 200px; }
 
 /*# sourceMappingURL=main.css.map */

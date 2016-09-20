@@ -1,11 +1,32 @@
-import { ModuleWithProviders } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {ModuleWithProviders} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {ProjectComponent} from './project/project.component';
+import {InfoComponent} from './project/info/info.component';
+import {OrderComponent} from './project/order/order.component';
 
 
-const appRoutes: Routes = [
-    // { path: 'home', component: HomeComponent },
-    // { path: 'about', component: AboutComponent },
-    // { path: '', component: HomeComponent }
+const appRoutes:Routes = [
+    {path: '', component: DashboardComponent},
+    {path: 'dashboard', component: DashboardComponent},
+    {
+        path: 'project', component: ProjectComponent,
+        children: [
+            {
+                path: '',
+                component: InfoComponent
+            },{
+                path: 'info',
+                component: InfoComponent
+            },{
+                path: 'order',
+                component: OrderComponent
+            }
+
+        ]
+    },
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+
+export const routing:ModuleWithProviders = RouterModule.forRoot(appRoutes, {useHash: true});
