@@ -33,6 +33,7 @@
   "devDependencies": {
     "canonical-path": "0.0.2",
     "concurrently": "^2.2.0",
+    "html-webpack-plugin": "^2.22.0",
     "http-server": "^0.9.0",
     "jasmine-core": "~2.4.1",
     "karma": "^1.2.0",
@@ -47,7 +48,10 @@
     "ts-loader": "^0.8.2",
     "tslint": "^3.7.4",
     "typescript": "^2.0.2",
-    "typings": "^1.0.4"
+    "typings": "^1.0.4",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1",
+    "webpack-merge": "^0.14.1"
   },
   "bugs": {
     "url": "https://github.com/EasonBlack/Angular2-Study/issues"
