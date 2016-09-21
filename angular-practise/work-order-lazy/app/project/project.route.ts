@@ -8,21 +8,25 @@ import {OrderComponent} from './order/order.component';
 
 const appRoutes:Routes = [
     {
+        path: '',  component: ProjectComponent
+    },
+    {
         path: 'project', component: ProjectComponent,
         children: [
             {
                 path: '',
                 component: InfoComponent
-            },{
+            },
+            {
                 path: 'info',
                 component: InfoComponent
-            },{
+            }, {
                 path: 'order',
                 component: OrderComponent
             }
 
         ]
-    },
+    }
 ];
 
 

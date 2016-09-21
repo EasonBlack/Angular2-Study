@@ -1,5 +1,6 @@
 import {NgModule}       from '@angular/core';
-import {BrowserModule}  from '@angular/platform-browser';
+//import {BrowserModule}  from '@angular/platform-browser';
+import {CommonModule}  from '@angular/common';
 import {routing}  from './dashboard.route';
 
 import {DashboardComponent} from './dashboard.component';
@@ -7,7 +8,7 @@ import {DashboardComponent} from './dashboard.component';
 
 @NgModule({
     imports: [
-        BrowserModule,
+        CommonModule,
         routing
     ],
     declarations: [

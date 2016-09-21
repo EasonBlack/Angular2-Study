@@ -1,5 +1,6 @@
 import {NgModule}       from '@angular/core';
-import {BrowserModule}  from '@angular/platform-browser';
+//import {BrowserModule}  from '@angular/platform-browser';
+import {CommonModule}  from '@angular/common';
 import {routing}  from './project.route';
 import {ProjectComponent} from './project.component';
 
@@ -9,7 +10,7 @@ import {OrderComponent} from './order/order.component';
 
 @NgModule({
     imports: [
-        BrowserModule,
+        CommonModule,
         routing
     ],
     declarations: [

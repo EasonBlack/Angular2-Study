@@ -1,16 +1,12 @@
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {AppComponent} from './app.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
-import {ProjectComponent} from './project/project.component';
-import {InfoComponent} from './project/info/info.component';
-import {OrderComponent} from './project/order/order.component';
+
+import {DefaultComponent} from './default.component';
 
 
 const appRoutes:Routes = [
     {
-        path: '',
-        component: AppComponent,
+        path: '', redirectTo: '/dashboard', pathMatch: 'full'
     },
     {
         path: 'dashboard',
