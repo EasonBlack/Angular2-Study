@@ -14,13 +14,13 @@ const appRoutes:Routes = [
     },
     {
         path: 'dashboard',
-        loadChildren: () => require("./dashboard/dashboard.module")("DashboardModule")
-        // loadChildren: './app/dashboard/dashboard.module#DashboardModule',
+        //loadChildren: () => require("./dashboard/dashboard.module")("DashboardModule")
+        loadChildren: './app/dashboard/dashboard.module#DashboardModule',
     },
     {
         path: 'project',
-        loadChildren: () => require("./project/project.module")("ProjectModule")
-        //loadChildren: './app/project/project.module#ProjectModule',
+        //loadChildren: () => require("./project/project.module")("ProjectModule")
+        loadChildren: './app/project/project.module#ProjectModule',
     }
 ];
 

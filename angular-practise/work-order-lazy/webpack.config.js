@@ -16,7 +16,10 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.ts/, loaders: ['ts-loader'], exclude: /node_modules/
+            test: /\.ts/, loaders: ['ts-loader'], exclude: /node_modules/,
+            "plugins": [
+                "add-module-exports"
+            ]
         }]
     },
     plugins: [
