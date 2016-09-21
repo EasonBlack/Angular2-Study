@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
     templateUrl: './app/app.component.tpl.html'
 })
 export class AppComponent {
-    // myresult: string;
-    // constructor() {
-    //     this.myresult = 'Hello World';
-    // }
+    myresult: string;
+    constructor() {
+        this.myresult = 'Hello World';
+    }
 }

@@ -4,10 +4,14 @@ import {Component, Input} from "@angular/core";
     templateUrl: './app/search-box/search-box.component.tpl.html'
 })
 export class SearchBoxComponent {
-    @Input('myplaceholder')
-    text = 'xxxxxx';
+    @Input('myplaceholder') text:String;
+    myvalue:String;
+
+    constructor() {
+        this.myvalue = "hello world";
+    }
 
     clear() {
-        
+        this.myvalue = '';
     }
 }
