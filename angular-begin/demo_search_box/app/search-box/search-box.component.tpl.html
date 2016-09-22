@@ -1,4 +1,5 @@
 <div>
-    <input placeholder="{{text}}"  [(ngModel)]="myvalue"/>
-    <button (click)="clear()">Clear</button>
+    <input placeholder="{{text}}" #myinput />
+    <button (click)="clear(myinput)">Clear</button>
+    <button (click)="inputChange(myinput.value)">Submit</button>
 </div>

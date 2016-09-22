@@ -4,8 +4,13 @@ import { Component } from '@angular/core';
     templateUrl: './app/app.component.tpl.html'
 })
 export class AppComponent {
-    myresult: string;
+    myresult:string;
+
     constructor() {
-        this.myresult = 'Hello World';
+        this.myresult = "";
+    }
+
+    myvalueChange(event) {
+        this.myresult = event.value;
     }
 }

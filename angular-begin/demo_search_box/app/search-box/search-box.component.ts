@@ -1,17 +1,23 @@
-import {Component, Input} from "@angular/core";
+import {Component, Input, Output, EventEmitter} from "@angular/core";
 @Component({
     selector: 'search-box',
     templateUrl: './app/search-box/search-box.component.tpl.html'
 })
 export class SearchBoxComponent {
     @Input('myplaceholder') text:String;
-    myvalue:String;
+    @Output() valueChange = new EventEmitter();
+
 
     constructor() {
-        this.myvalue = "hello world";
+
     }
 
-    clear() {
-        this.myvalue = '';
+    clear(input) {
+        input.value = "";
+    }
+
+    inputChange(value) {
+        console.log(value);
+        this.valueChange.emit({value: value});
     }
 }
