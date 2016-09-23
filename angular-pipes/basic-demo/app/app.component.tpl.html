@@ -1,0 +1,19 @@
+<h1>My Angular 2</h1>
+<div>
+    <div *ngFor="let item of items">
+        {{item | abouttwo:2}}
+    </div>
+</div>
+<br>
+<div>
+    <div *ngFor="let item of (items | filtertwo)">
+        {{item}}
+    </div>
+</div>
+<br>
+<div>
+    <div><input #inputa /><button (click)="add(inputa.value)">Add</button></div>
+    <div *ngFor="let item of (items | filtertwoImpure)">
+        {{item}}
+    </div>
+</div>
