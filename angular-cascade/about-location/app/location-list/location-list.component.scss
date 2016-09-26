@@ -29,6 +29,11 @@ li {
 .location-list__area-item {
   z-indx:10;
 }
+.location-list__area-item.active {
+  background-color:grey;
+  opacity: 0.6;
+  color:white;
+}
 
 .location-list__location-item {
   height:0px;
