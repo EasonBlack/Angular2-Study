@@ -1,0 +1,9 @@
+<ul class="place-nav">
+    <div class="place-nav__header" ></div>
+    <li *ngFor="let building of buildings"
+        class = "place-nav__item"
+        [ngClass]="{'active': placeSelected==building.id}"
+        (click)="areaSelect(building.id)">
+      {{building.name}}
+    </li>
+</ul>

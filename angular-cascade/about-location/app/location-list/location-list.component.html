@@ -1,0 +1,16 @@
+<ul *ngIf="areas && areas.length ">
+    <div class="location-list__header"></div>
+    <span *ngFor="let area of areas">
+        <li class="location-list__area-item"
+            (click)="areaSelect(area.id)"   >
+            {{area.name}}
+        </li>
+        <li class="location-list__location-item"
+            [ngClass]="{'active': areaSelected==area.id}"
+            *ngFor="let location of area.children">
+            {{location.name}}
+        </li>
+
+    </span>
+
+</ul>

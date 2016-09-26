@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Building A",
+    "children": [
+      {
+        "id": 11,
+        "name": "Area A",
+        "children": [
+          {
+            "id": 111,
+            "name": "Location 1"
+          },
+          {
+            "id": 112,
+            "name": "Location 2"
+          },
+          {
+            "id": 113,
+            "name": "Location 3"
+          },
+          {
+            "id": 114,
+            "name": "Location 4"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Area B",
+        "children": [
+          {
+            "id": 121,
+            "name": "Location 5"
+          },
+          {
+            "id": 122,
+            "name": "Location 6"
+          },
+          {
+            "id": 123,
+            "name": "Location 7"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Area C",
+        "children": [
+          {
+            "id": 131,
+            "name": "Location 8"
+          },
+          {
+            "id": 132,
+            "name": "Location 9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Building B",
+    "children": [
+      {
+        "id": 21,
+        "name": "Area D",
+        "children": [
+          {
+            "id": 211,
+            "name": "Location 11"
+          },
+          {
+            "id": 212,
+            "name": "Location 12"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Area E",
+        "children": [
+          {
+            "id": 221,
+            "name": "Location 13"
+          },
+          {
+            "id": 222,
+            "name": "Location 14"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Area F",
+        "children": [
+          {
+            "id": 231,
+            "name": "Location 15"
+          },
+          {
+            "id": 232,
+            "name": "Location 16"
+          }
+        ]
+      }
+    ]
+  }
+]

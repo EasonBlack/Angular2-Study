@@ -1,0 +1,34 @@
+
+ul {
+  list-style:none;
+}
+
+.place-nav {
+  display:flex;
+  flex-direction:column;
+  border: 1px solid grey;
+  margin: 0px 5px;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.place-nav__header {
+  height:30px;
+  background-color: #555555;
+  color:white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.place-nav li {
+  padding-left: 20px;
+  height:40px;
+  line-height:40px;
+  font-size:1.2em;
+  cursor:pointer;
+}
+.place-nav li.active {
+  background-color:grey;
+  opacity: 0.6;
+  color:white;
+}
