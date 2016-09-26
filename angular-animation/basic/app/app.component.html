@@ -1,6 +1,13 @@
-<h1>
-  {{title}}
-</h1>
-<div>
-
+<div class="container">
+    <h1>Animations</h1>
+    <hr>
+    <button type="button"
+            class="btn btn-primary btn-lg"
+            (click)="toggleVisibility()">
+        {{ getLabel() }}
+    </button>
+    <div *ngIf="visibility=='shown'"
+         class="alert alert-success">
+        Animate good times! Come on!
+    </div>
 </div>
