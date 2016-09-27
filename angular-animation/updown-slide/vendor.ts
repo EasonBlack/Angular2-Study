@@ -1,0 +1,14 @@
+import '../../node_modules/zone.js/dist/zone.js';
+import '../../node_modules/reflect-metadata/Reflect.js';
+
+
+// Angular 2
+import '@angular/platform-browser';
+import '@angular/platform-browser-dynamic';
+import '@angular/core';
+import '@angular/common';
+import '@angular/http';
+import '@angular/router';
+import '@angular/forms';
+import 'rxjs/Observable';
+import 'rxjs/add/operator/map';

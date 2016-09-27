@@ -1,0 +1,16 @@
+
+ul {
+    list-style:none;
+    width:100px;
+}
+
+.list-header {
+    background-color: #555555;
+}
+
+.list-wrapper {
+    overflow: hidden;
+}
+li {
+    height:30px;
+}
