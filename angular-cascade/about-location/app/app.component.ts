@@ -12,7 +12,6 @@ export class AppComponent implements OnInit {
     title = 'app works!';
     buildings:any[];
     selectedArea:any[];
-    //selectedAreaId: number;
 
     constructor(private buildingService:BuildingService) {
 
