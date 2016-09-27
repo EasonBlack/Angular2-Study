@@ -15,7 +15,5 @@ export class ItemService {
         return res.json()
       })
   }
-  // getHeroes(): Promise<Hero[]> {
-  //   return Promise.resolve(HEROES);
-  // }
+
 }

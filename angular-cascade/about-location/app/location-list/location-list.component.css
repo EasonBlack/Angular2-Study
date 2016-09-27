@@ -1,0 +1,43 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  margin: 0px 5px;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 10px; }
+
+.location-list__header {
+  height: 30px;
+  background-color: #555555;
+  color: white;
+  border-radius: 10px 10px 0px 0px; }
+
+li {
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: block;
+  position: relative; }
+
+.location-list__area-item {
+  z-indx: 10; }
+
+.location-list__area-item.active {
+  background-color: grey;
+  opacity: 0.6;
+  color: white; }
+
+.location-list__location-item {
+  height: 0px;
+  line-height: 0px;
+  overflow: hidden; }
+
+.location-list__location-item.active {
+  height: 40px !important;
+  line-height: 40px !important; }
+
+/*# sourceMappingURL=location-list.component.css.map */
