@@ -2,6 +2,7 @@ import { Component, trigger, state, animate, transition, style } from '@angular/
 
 @Component({
     selector: 'app-root',
+    templateUrl: './app/app.component.html',
     styles: [
         ``
     ],
@@ -13,26 +14,10 @@ import { Component, trigger, state, animate, transition, style } from '@angular/
             state('inactive', style({
                 height: 0
             })),
-            //transition('* => *', animate('300ms ease'))
             transition('active => inactive', animate('100ms ease-in-out')),
             transition('inactive => active', animate('100ms ease-in-out'))
         ])
-    ],
-    template: `
-         <div class="container">
-             <h1>Animations</h1>
-             <ul>
-                 <ng-container *ngFor="let item of items">
-                     <li (click)="toggleActive(item)" class="list-header">{{item.name}}</li>
-                     <div  [@active]="item.active" class="list-wrapper">
-                         <li *ngFor="let subitem of item.children">
-                             {{subitem.name}}
-                         </li>
-                     </div>
-                 </ng-container>
-             </ul>
-         </div>
-      `
+    ]
 })
 export class AppComponent {
 

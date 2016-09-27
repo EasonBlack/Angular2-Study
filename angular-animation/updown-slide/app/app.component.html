@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Animations</h1>
+    <ul>
+        <ng-container *ngFor="let item of items">
+            <li (click)="toggleActive(item)" class="list-header">{{item.name}}</li>
+            <div  [@active]="item.active" class="list-wrapper">
+                <li *ngFor="let subitem of item.children">
+                    {{subitem.name}}
+                </li>
+            </div>
+        </ng-container>
+    </ul>
+</div>
