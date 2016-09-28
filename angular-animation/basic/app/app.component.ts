@@ -2,7 +2,6 @@ import { Component, trigger, state, animate, transition, style } from '@angular/
 
 @Component({
     selector: 'app-root',
-    //templateUrl: './app/app.component.html',
     styles: [
         `.alert { margin-top: 10px; }`
     ],
