@@ -1,0 +1,27 @@
+//{
+//    "compilerOptions": {
+//        "emitDecoratorMetadata": true,
+//        "experimentalDecorators": true,
+//        "target": "es5",
+//        "module": "commonjs",
+//        "removeComments": true,
+//        "sourceMap": false
+//    },
+//    "exclude": [
+//        "node_modules"
+//    ]
+//}
+
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
+  }
+}
