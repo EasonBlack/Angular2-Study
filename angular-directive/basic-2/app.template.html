@@ -1,0 +1,8 @@
+<div>
+    <label>Red</label><input type="radio" (click)="color='red'" />
+    <label>Green</label><input type="radio" (click)="color='green'" />
+    <label>Blue</label><input type="radio" (click)="color='blue'" />
+</div>
+<div>
+    <h2 myColor [hoverColor]="color"  >This is my app</h2>
+</div>
