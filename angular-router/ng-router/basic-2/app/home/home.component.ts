@@ -1,10 +1,7 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import {Info} from './home';
 
-export class Info {
-    id: number;
-    name: string;
-}
 @Component({
     selector: 'app-home',
     template: `
@@ -23,21 +20,21 @@ export class Info {
      <router-outlet></router-outlet>
     `
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-    infos:Info[];
+    infos : Info[]
+
     constructor(private route: ActivatedRoute,
                   private router: Router) {
-
-        this.infos = [
-            {id: 1 , name :'aaa'},
-            {id: 2 , name :'bbb'},
-            {id: 3 , name :'ccc'},
-            {id: 4 , name :'ddd'}
-        ]
     }
 
     onSelect(info: Info) {
         this.router.navigate(['info', info.id],{ relativeTo: this.route });
+    }
+
+    ngOnInit() {
+        this.route.data.forEach((data: {infos: Info[]}) => {
+          this.infos = data.infos;
+        });
     }
 }

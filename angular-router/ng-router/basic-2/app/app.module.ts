@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app.route';
 import { HomeModule } from './home/home.module';
 
 import { AboutComponent} from './about/about.component';
+import { GuardComponent} from './guard/guard.component';
 import { ErrorComponent} from './error/error.component';
 
 
@@ -19,6 +20,7 @@ import { ErrorComponent} from './error/error.component';
     declarations: [
         AppComponent,
         AboutComponent,
+        GuardComponent,
         ErrorComponent
     ],
     bootstrap: [ AppComponent ]

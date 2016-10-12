@@ -3,12 +3,15 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent} from './home.component';
 import { InfoListComponent }    from './info-list/info-list.component';
 import { InfoDetailComponent }  from './info-detail/info-detail.component';
-
+import { HomeInfoResolve }   from './home-resolve.service';
 @NgModule({
     imports: [
         RouterModule.forChild([
 
             { path: 'home',component: HomeComponent,
+                resolve: {
+                    infos: HomeInfoResolve
+                },
                 children: [
                     {
                         path: '',
@@ -30,6 +33,9 @@ import { InfoDetailComponent }  from './info-detail/info-detail.component';
     ],
     exports: [
         RouterModule
+    ],
+    providers: [
+        HomeInfoResolve
     ]
 })
 export class HomeRoutingModule { }

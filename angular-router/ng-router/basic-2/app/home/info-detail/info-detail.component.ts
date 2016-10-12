@@ -7,13 +7,15 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
     <div>{{content}}</div>
     `
 })
-export class InfoDetailComponent implements OnInit  {
-    content: string;
+export class InfoDetailComponent implements OnInit {
+    content:string;
 
-   constructor( private route: ActivatedRoute,
-                private router: Router){}
+    constructor(private route:ActivatedRoute,
+                private router:Router) {
+    }
+
     ngOnInit() {
-        this.route.params.forEach((params: Params) => {
+        this.route.params.forEach((params:Params) => {
             let id = +params['id']; // (+) converts string 'id' to a number
             this.content = 'info' + id;
         });
