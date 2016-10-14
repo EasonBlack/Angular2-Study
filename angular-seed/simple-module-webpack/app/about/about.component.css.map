@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACT,gBAAgB,EAAE,SAAS",
+"sources": ["about.component.scss"],
+"names": [],
+"file": "about.component.css"
+}
