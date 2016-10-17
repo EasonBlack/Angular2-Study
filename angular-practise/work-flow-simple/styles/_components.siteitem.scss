@@ -1,0 +1,70 @@
+
+.siteitem__container {
+  flex: 1 0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.siteitem__card {
+  min-width: 250px;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  box-sizing: border-box;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  div {
+    padding-left: $default-padding;
+    font-size: 0.8em;
+  }
+
+}
+
+.siteitem__image {
+  background-color: #E6E6E6;
+  height: 150px;
+}
+
+.siteitem__title {
+  height: 30px;
+  line-height: 30px;
+}
+
+.siteitem__issue {
+  flex: 1;
+  color: #EAA69E;
+}
+
+.siteitem__owner {
+  height: 30px;
+  line-height: 30px;
+}
+
+@media (min-width: 500px) {
+  .siteitem__container {
+    min-width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 890px) {
+  .siteitem__container {
+    min-width: 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (min-width: 1240px) {
+  .siteitem__container {
+    max-width: 25%;
+    min-width: 25%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .siteitem__container {
+    min-width: 20%;
+    max-width: 20%;
+  }
+}

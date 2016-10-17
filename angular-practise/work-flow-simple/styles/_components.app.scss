@@ -1,0 +1,33 @@
+
+.app__top-menu {
+  display:flex;
+  flex-direction:row;
+
+  height: $top-bar-height;
+  line-height:$top-bar-height;
+  background-color: #3F3F3F;
+  padding-left: $default-padding;
+  color: #B1BAC7;
+}
+.app__top-menu_title {
+  width:150px;
+}
+.app__top-menu_link {
+  flex:1;
+
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+
+  li {
+    width:100px;
+    color: #B1BAC7;
+  }
+  li.active {
+    color: white;
+  }
+}
+.app__top-menu_user {
+   width:100px;
+}
+

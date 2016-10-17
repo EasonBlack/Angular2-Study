@@ -1,0 +1,46 @@
+.siteinfo__container {
+  height: calc(100vh - #{$top-bar-height});
+  display: flex;
+  flex-direction: row;
+}
+
+.siteinfo__left {
+  width: 300px;
+}
+
+.siteinfo__name-section {
+  background-color: #F5F7F7;
+  height: $title-bar-height;
+  line-height: $title-bar-height;
+  font-size: 1.6em;
+  padding-left: $default-padding;
+}
+
+.siteinfo__menu {
+  background-color: #E3E4E6;
+  height: calc(100vh - #{$top-bar-height + $title-bar-height});
+}
+
+.siteinfo__menu-item {
+  height: 50px;
+  line-height: 50px;
+  padding-left: $default-padding;
+}
+
+.siteinfo__menu-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+
+}
+
+.siteinfo__menu-title {
+  padding-left: $default-padding;
+  font-size: 1.1em;
+}
+
+.siteinfo__right {
+  flex: 1;
+}
