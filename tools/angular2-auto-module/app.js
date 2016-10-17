@@ -11,10 +11,10 @@ prompt.get(['module','components'], function (err, result) {
     var folder = path.join(__dirname, module);
     if (!fs.existsSync(folder)) {
         fs.mkdirSync(folder);
-        // create.createTemplate(folder, result.name);
-        // create.createController(folder, result.name);
-        // create.createComponent(folder, result.name);
     }
     create.createModule(folder, module, components);
     create.createRoute(folder, module, components);
+    create.createComponent(folder, module);
+    create.createTemplate(folder, module, components);
+    create.createSubComponent(folder, module, components);
 });

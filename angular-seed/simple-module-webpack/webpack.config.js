@@ -26,7 +26,12 @@ module.exports = {
             {
                 test: /\.css$/,
                 loaders: ['to-string-loader', 'css-loader']
-            }
+            },
+            {
+                test: /\.html$/,
+                loader: 'raw-loader',
+                exclude: [path.join(__dirname, 'index.html')]
+            },
         ]
     },
     plugins: [

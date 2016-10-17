@@ -1,0 +1,9 @@
+<div>
+    <a routerLink="/home/help" routerLinkActive="active">Help</a>
+    <ul>
+        <li *ngFor="let info of infos" (click)="onSelect(info)">
+            {{info.name}}
+        </li>
+    </ul>
+</div>
+<router-outlet></router-outlet>

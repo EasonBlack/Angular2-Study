@@ -1,12 +1,16 @@
-const tpl = (name1,name2) =>`
-import controller from './${name1}.component.ctrl.js';
-import template from './${name1}.component.tpl.html';
+var common = require('../common');
 
-let ${name2}Component = {
-    controller,
-    template
+
+const tpl = (name) => {
+    let nameUpper = common.firstLetterUp(name);
+    return `
+import {Component, OnInit} from '@angular/core';
+import {Router, ActivatedRoute, Params} from '@angular/router';
+
+@Component({
+    templateUrl: '${name}.template.html'
+})
+export class ${nameUpper}Component  {
+}`
 }
-
-export default ${name2}Component;`
-
 module.exports = tpl;

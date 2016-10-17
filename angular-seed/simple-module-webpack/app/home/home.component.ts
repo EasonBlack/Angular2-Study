@@ -2,17 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute, Params} from '@angular/router';
 
 @Component({
-    selector: 'app-home',
-    template: `
-    <div>
-     <ul>
-      <li *ngFor="let info of infos" (click)="onSelect(info)">
-        {{info.name}}
-      </li>
-     </ul>
-    </div>
-     <router-outlet></router-outlet>
-    `
+    templateUrl: 'home.template.html'
 })
 export class HomeComponent implements OnInit {
 

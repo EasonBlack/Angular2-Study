@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home.route';
 import { HomeComponent} from './home.component';
 import { InfoListComponent }    from './info-list/info-list.component';
 import { InfoDetailComponent }  from './info-detail/info-detail.component';
+import { InfoHelpComponent }  from './info-help/info-help.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { InfoDetailComponent }  from './info-detail/info-detail.component';
     declarations: [
         HomeComponent,
         InfoListComponent,
-        InfoDetailComponent
+        InfoDetailComponent,
+        InfoHelpComponent
     ]
 })
 export class HomeModule {}

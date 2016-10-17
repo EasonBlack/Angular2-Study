@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent} from './home.component';
 import { InfoListComponent }    from './info-list/info-list.component';
 import { InfoDetailComponent }  from './info-detail/info-detail.component';
+import { InfoHelpComponent }  from './info-help/info-help.component';
 import { HomeInfoResolve }   from './home-resolve.service';
 @NgModule({
     imports: [
@@ -24,11 +25,15 @@ import { HomeInfoResolve }   from './home-resolve.service';
                     {
                         path: 'info/:id',
                         component: InfoDetailComponent
+                    },
+                    {
+                        path: 'help',
+                        component: InfoHelpComponent
                     }
 
                 ]
             },
-            { path: '',component: HomeComponent}
+            { path: '',redirectTo: '/home/infos', pathMatch: 'full'}
         ])
     ],
     exports: [
