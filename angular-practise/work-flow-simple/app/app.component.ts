@@ -2,20 +2,16 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'my-app',
     template: `
-    <h1>
-    Hello {{name}}
-    </h1>
-     <nav>
-      <a routerLink="/home" routerLinkActive="active">Home</a>
-      <a routerLink="/about"  routerLinkActive="active">About</a>
-     </nav>
+    <div class="app__top-menu">
+      <div class="app__top-menu_title">SmartLife</div>
+      <ul class="app__top-menu_link">
+          <li class="active" routerLink="/sitelist" routerLinkActive="active">Site</li>
+          <li routerLink="/analytics"  routerLinkActive="active">Analytics</li>
+      </ul>
+      <div class="app__top-menu_user">xxx xxx</div>
+    </div>
     <router-outlet></router-outlet>
     `
 })
 export class AppComponent {
-    public name:string;
-
-    constructor() {
-        this.name = 'World';
-    }
 }

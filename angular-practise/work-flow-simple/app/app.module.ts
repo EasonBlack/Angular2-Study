@@ -3,18 +3,22 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { AppComponent }   from './app.component';
 import { AppRoutingModule } from './app.route';
 import { HomeModule } from './home/home.module';
+import { SiteInfoModule } from './site-info/site-info.module';
 
-import { AboutComponent} from './about/about.component';
+import { AnalyticsComponent} from './analytics/analytics.component';
+import { SiteListComponent} from './site-list/site-list.component';
 
 @NgModule({
     imports: [
         BrowserModule,
         AppRoutingModule,
-        HomeModule
+        HomeModule,
+        SiteInfoModule
     ],
     declarations: [
         AppComponent,
-        AboutComponent
+        SiteListComponent,
+        AnalyticsComponent
     ],
     bootstrap: [ AppComponent ]
 })

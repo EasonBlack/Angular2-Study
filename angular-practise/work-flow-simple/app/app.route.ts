@@ -1,14 +1,16 @@
-
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent} from './about/about.component';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {AnalyticsComponent} from './analytics/analytics.component';
+import {SiteListComponent} from './site-list/site-list.component';
 
 const routes: Routes = [
-    { path: 'about',component: AboutComponent }
+    {path: 'analytics', component: AnalyticsComponent},
+    {path: 'sitelist', component: SiteListComponent}
 ];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
