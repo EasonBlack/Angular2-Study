@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../styles/main.css" rel="stylesheet">
+    <style>
+        .mask {
+            position:relative;
+            height:100%;
+            width:100%;
+            background-color: rgba(0,0,0,0.3);
+            z-index:1;
+        }
+        .modal-container {
+            position:absolute;
+            background-color:white;
+            margin-top:30px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            width: 500px;
+            height:500px;
+            z-index:5;
+        }
+    </style>
+</head>
+<body>
+<div class="mask">
+</div>
+<div class="modal-container">
+</div>
+</body>
+</html>

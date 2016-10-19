@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 var path = require('path');
 
 module.exports = {
@@ -23,10 +22,6 @@ module.exports = {
             {
                 test: /\.ts/,
                 loaders: ['awesome-typescript-loader', 'angular2-template-loader', 'angular2-router-loader']
-            },
-            {
-                test: /\.css$/,
-                loaders: ['to-string-loader', 'css-loader']
             },
             {
                 test: /\.html$/,

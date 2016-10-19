@@ -21,9 +21,15 @@
 }
 
 .location__area-list_title {
+  position:relative;
   height: 50px;
   line-height: 50px;
   text-align: center;
+}
+
+.location__area-list_add-icon {
+  position:absolute;
+  right:15px;
 }
 
 .location__area-item {
