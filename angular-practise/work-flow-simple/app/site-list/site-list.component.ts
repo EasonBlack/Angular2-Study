@@ -9,6 +9,7 @@ import {Site} from '../../model/site.model';
 export class SiteListComponent implements OnInit {
 
     sites: Site[];
+    siteFilterName: string = '';
 
     constructor(private siteService: SiteService) {
     }
@@ -21,7 +22,6 @@ export class SiteListComponent implements OnInit {
         this.siteService.getSites()
             .subscribe(sites => {
                 this.sites = sites;
-                console.log(this.sites);
             });
     }
 }

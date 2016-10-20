@@ -12,5 +12,4 @@ export class SiteService {
         return this.http.get('/data/sites.json')
             .map((res:Response) =>  res.json())
     }
-
 }
