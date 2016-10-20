@@ -1,37 +1,37 @@
 [
   {
     "id": 1,
-    "name": "Aden HQ Office Center A",
+    "name": "Aden HQ A",
     "issue": 3,
     "owner": "xxx"
   },
   {
     "id": 2,
-    "name": "Aden HQ Office Center B",
+    "name": "Aden HQ B",
     "issue": 4,
     "owner": "xxx"
   },
   {
     "id": 3,
-    "name": "Aden HQ Office Center C",
+    "name": "Aden HQ C",
     "issue": 5,
     "owner": "xxx"
   },
   {
     "id": 4,
-    "name": "Aden HQ Office Center D",
+    "name": "Aden HQ D",
     "issue": 6,
     "owner": "xxx"
   },
   {
     "id": 5,
-    "name": "Aden HQ Office Center E",
+    "name": "Aden HQ E",
     "issue": 7,
     "owner": "xxx"
   },
   {
     "id": 6,
-    "name": "Aden HQ Office Center F",
+    "name": "Aden HQ F",
     "issue": 6,
     "owner": "xxx"
   }

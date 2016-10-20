@@ -9,7 +9,7 @@ export class AboutTwoPipe implements PipeTransform {
 
 @Pipe({name: 'filtertwo'})
 export class FilterTwoPipe implements PipeTransform {
-    transform(items:Number[]):number {
+    transform(items:Number[]) {
         return items.filter(o=>o % 2 == 0);
     }
 }

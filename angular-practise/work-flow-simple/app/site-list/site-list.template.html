@@ -11,7 +11,7 @@
     <div class="sitelist__container">
         <div class="siteitem__container" *ngFor="let site of (sites | sitefilter:siteFilterName)">
             <div class="siteitem__card" >
-                <div class="siteitem__image"  routerLink="/siteinfo"  routerLinkActive="active"></div>
+                <div class="siteitem__image"  [routerLink]="['/siteinfo', site.id]"   routerLinkActive="active"></div>
                 <div class="siteitem__title">
                     {{site.name}}
                 </div>

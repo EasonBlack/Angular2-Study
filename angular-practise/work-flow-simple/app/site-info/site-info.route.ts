@@ -7,7 +7,7 @@ import {WorkOrderComponent} from './workorder/workorder.component';
     imports: [
         RouterModule.forChild([
             {
-                path: 'siteinfo', component: SiteInfoComponent,
+                path: 'siteinfo/:id', component: SiteInfoComponent,
                 children: [
                     {
                         path: '', redirectTo: 'location', pathMatch: 'full',
