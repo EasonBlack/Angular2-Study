@@ -9,17 +9,17 @@
         <input type="text" class="input__search_primary" placeholder="Search Site" />
     </div>
     <div class="sitelist__container">
-        <div class="siteitem__container">
+        <div class="siteitem__container" *ngFor="let site of sites">
             <div class="siteitem__card" >
                 <div class="siteitem__image"  routerLink="/siteinfo"  routerLinkActive="active"></div>
                 <div class="siteitem__title">
-                    Aden HQ Office Center
+                    {{site.name}}
                 </div>
                 <div class="siteitem__issue">
-                    3 pending issue
+                    {{site.issue}} pending issue
                 </div>
                 <div class="siteitem__owner">
-                    XXX XXX
+                    {{site.owner}}
                 </div>
             </div>
         </div>

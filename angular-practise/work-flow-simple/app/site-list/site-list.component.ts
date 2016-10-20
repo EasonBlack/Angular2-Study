@@ -1,6 +1,27 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {SiteService} from '../../service/site.service';
+import {Site} from '../../model/site.model';
+
 @Component({
-    templateUrl: 'site-list.template.html'
+    templateUrl: 'site-list.template.html',
+    providers: [SiteService]
 })
-export class SiteListComponent {
+export class SiteListComponent implements OnInit {
+
+    sites: Site[];
+
+    constructor(private siteService: SiteService) {
+    }
+
+    ngOnInit() {
+        this.getSites();
+    }
+
+    getSites() {
+        this.siteService.getSites()
+            .subscribe(sites => {
+                this.sites = sites;
+                console.log(this.sites);
+            });
+    }
 }
