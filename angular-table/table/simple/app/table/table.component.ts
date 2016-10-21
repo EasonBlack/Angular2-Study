@@ -1,9 +1,11 @@
 import {Component, Input} from '@angular/core';
 @Component({
     selector: 'app-table',
-    template: `<table>
+    template: `<table class="table table-striped">
           <thead>
-             <th *ngFor="let column of columns">{{column.name}}</th>
+             <tr>
+               <th *ngFor="let column of columns">{{column.name}}</th>
+             </tr>
           </thead>
           <tbody>
               <tr *ngFor="let row of rows">

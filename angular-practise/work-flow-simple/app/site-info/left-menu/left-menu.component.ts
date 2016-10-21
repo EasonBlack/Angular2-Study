@@ -4,4 +4,5 @@ import {Component} from '@angular/core';
     templateUrl: 'left-menu.template.html'
 })
 export class SiteLeftMenuComponent {
+    public isActive: number = 0;
 }

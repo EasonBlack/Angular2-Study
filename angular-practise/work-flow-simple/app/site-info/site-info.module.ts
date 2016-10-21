@@ -13,6 +13,7 @@ import {LocationAreaListComponent} from './location/area-list/area-list.componen
 import {LocationAreaInfoComponent} from './location/area-info/area-info.component';
 import {AreaAddModal} from './location/area-add/area-add.component'
 import {WorkOrderComponent} from './workorder/workorder.component';
+import {WorkPlanComponent} from './workplan/workplan.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import {WorkOrderComponent} from './workorder/workorder.component';
         LocationAreaListComponent,
         LocationAreaInfoComponent,
         WorkOrderComponent,
+        WorkPlanComponent,
         AreaAddModal
     ],
     entryComponents: [ AreaAddModal ]

@@ -1,12 +1,31 @@
 <div class="siteinfo__menu">
     <ul>
-        <li class="siteinfo__menu-item" [routerLink]="['location']" routerLinkActive="active">
+        <li class="siteinfo__menu-item " [routerLink]="['location']" [ngClass]="{'active': isActive==1}"
+            (click)="isActive=1">
             <span class="siteinfo__menu-icon"></span>
             <span class="siteinfo__menu-title">Location</span>
+            <span class="siteinfo__menu-down glyphicon"></span>
         </li>
-        <li class="siteinfo__menu-item" [routerLink]="['workorder']" routerLinkActive="active">
+        <li class="siteinfo__menu-item " [routerLink]="['workorder']"  [ngClass]="{'active': isActive==2}"
+            (click)="isActive=2">
             <span class="siteinfo__menu-icon"></span>
             <span class="siteinfo__menu-title">Work Order</span>
+            <span class="siteinfo__menu-down glyphicon"></span>
+        </li>
+        <li class="siteinfo__menu-item"  [ngClass]="{'active': isActive==3}">
+            <span class="siteinfo__menu-icon"></span>
+            <span class="siteinfo__menu-title" (click)="isActive == 3 ? isActive=0: isActive=3" >Work Plan</span>
+            <span class="siteinfo__menu-down glyphicon"  [ngClass]="{'glyphicon-menu-down': isActive==3, 'glyphicon-menu-right': isActive!=3}"></span>
+            <ul class="siteinfo__menu-sub" [ngClass]="{active: isActive==3}">
+                <li>
+                    <span class="siteinfo__menu-icon empty"></span>
+                    <span class="siteinfo__menu-title" [routerLink]="['workplan']">Daily Plan</span>
+                </li>
+                <li>
+                    <span class="siteinfo__menu-icon empty"></span>
+                    <span class="siteinfo__menu-title ">Routine Schedule</span>
+                </li>
+            </ul>
         </li>
     </ul>
 </div>
