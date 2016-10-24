@@ -29,6 +29,19 @@ ul {
   line-height: 30px;
   border: none; }
 
+.page__title-section {
+  height: 70px;
+  line-height: 70px; }
+
+.page__title_name {
+  font-size: 1.3em;
+  padding-left: 20px; }
+
+.page__container {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #E3E4E6; }
+
 .app__top-menu {
   display: flex;
   flex-direction: row;
@@ -212,19 +225,6 @@ ul {
 
 .siteinfo__right {
   flex: 1; }
-
-.location__title-section {
-  height: 70px;
-  line-height: 70px; }
-
-.location__title_name {
-  font-size: 1.3em;
-  padding-left: 20px; }
-
-.location__container {
-  display: flex;
-  flex-direction: row;
-  border-top: 1px solid #E3E4E6; }
 
 .location__area-list {
   width: 380px;

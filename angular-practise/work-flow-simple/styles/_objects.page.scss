@@ -1,0 +1,15 @@
+.page__title-section {
+  height: $title-bar-height;
+  line-height: $title-bar-height;
+}
+
+.page__title_name {
+  font-size: 1.3em;
+  padding-left: $default-padding;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #E3E4E6;
+}

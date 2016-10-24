@@ -8,7 +8,6 @@ import {Component} from '@angular/core';
        <app-item [ItemValue]="aaa"  (titleUpdated)="myTitleUpdated($event)"  ></app-item>
     </ul>
     <router-outlet></router-outlet>
-    
     `
 })
 export class AppComponent {
