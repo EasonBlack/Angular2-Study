@@ -42,6 +42,31 @@ ul {
   flex-direction: row;
   border-top: 1px solid #E3E4E6; }
 
+.page__container_column {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #E3E4E6; }
+
+.table__tabs {
+  padding-top: 15px;
+  padding-left: 20px;
+  background-color: #F5F7F7; }
+
+.table__search {
+  height: 80px;
+  padding-top: 30px;
+  padding-left: 20px; }
+
+.table__search_input {
+  height: 30px;
+  width: 320px;
+  border-radius: 12px;
+  padding-left: 1px; }
+
+.table__grid {
+  padding-left: 20px;
+  padding-right: 20px; }
+
 .app__top-menu {
   display: flex;
   flex-direction: row;

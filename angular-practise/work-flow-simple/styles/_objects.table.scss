@@ -1,0 +1,23 @@
+.table__tabs {
+  padding-top:15px;
+  padding-left: $default-padding;
+  background-color: #F5F7F7;
+}
+
+.table__search {
+  height: 80px;
+  padding-top: 30px;
+  padding-left: $default-padding;
+}
+
+.table__search_input {
+  height: 30px;
+  width: 320px;
+  border-radius: 12px;
+  padding-left:10px;
+}
+
+.table__grid {
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+}
