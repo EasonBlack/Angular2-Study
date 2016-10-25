@@ -17,3 +17,8 @@ html,body {
 ul {
   list-style:none;
 }
+
+
+input:focus {
+  outline-width: 0;
+}

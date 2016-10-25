@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th *ngFor="let header of headers">
+            {{header.title}}
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of rows">
+        <td *ngFor="let header of headers">
+            {{row[header.name]}}
+        </td>
+    </tr>
+    </tbody>
+</table>

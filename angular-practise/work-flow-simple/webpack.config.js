@@ -53,6 +53,7 @@ module.exports = {
         })
     ],
     devServer: {
-        stats: 'minimal'
+        stats: 'minimal',
+        historyApiFallback: true
     }
 };

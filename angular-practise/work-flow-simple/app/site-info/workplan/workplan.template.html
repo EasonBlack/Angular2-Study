@@ -4,7 +4,42 @@
             Routine Schedule
         </div>
     </div>
-    <div class="page__container">
-       This is Routine
+    <div class="page__container_column">
+        <ul class="nav nav-tabs table__tabs">
+            <li (click)="selectTab(0)" [ngClass]="{active: tabActive==0}"><a>All Schedule</a></li>
+            <li (click)="selectTab(1)" [ngClass]="{active: tabActive==1}"><a>Cleaning Service</a></li>
+            <li (click)="selectTab(2)" [ngClass]="{active: tabActive==2}"><a>Maintenance</a></li>
+        </ul>
+        <div class="table__container">
+            <div class="table__search ">
+                <input class="table__search_input" placeholder="Search location, checkpoint, asset"/>
+                <span class="glyphicon glyphicon-search table__search_icon"></span>
+            </div>
+            <div class="table__grid">
+                <app-table [headers]="headers" [rows]="routines"></app-table>
+            </div>
+            <div class="table__pager">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
     </div>
 </div>

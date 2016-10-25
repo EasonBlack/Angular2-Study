@@ -1,7 +1,12 @@
 .table__tabs {
-  padding-top:15px;
+  padding-top: 15px;
   padding-left: $default-padding;
   background-color: #F5F7F7;
+}
+
+.table__container {
+  position: relative;
+  height: calc(100vh - 168px);
 }
 
 .table__search {
@@ -12,12 +17,31 @@
 
 .table__search_input {
   height: 30px;
-  width: 320px;
+  width: 380px;
   border-radius: 12px;
-  padding-left:10px;
+  padding-left: 10px;
+}
+
+.table__search_icon {
+  display: inline-block;
+  margin-left: -30px;
+  color: #E3E4E6;
 }
 
 .table__grid {
+  max-height: 80%;
+  overflow-y:auto;
+  overflow-y:auto;
+  overflow-x:hidden;
   padding-left: $default-padding;
   padding-right: $default-padding;
+  .glyphicon-triangle-bottom {
+    font-size:0.5em;
+  }
+}
+
+.table__pager {
+  position: absolute;
+  bottom: 0;
+  right: $default-padding;
 }

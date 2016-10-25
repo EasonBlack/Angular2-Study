@@ -12,6 +12,9 @@ html, body {
 ul {
   list-style: none; }
 
+input:focus {
+  outline-width: 0; }
+
 .button__primary {
   background-color: #808080;
   color: white;
@@ -52,6 +55,10 @@ ul {
   padding-left: 20px;
   background-color: #F5F7F7; }
 
+.table__container {
+  position: relative;
+  height: calc(100vh - 168px); }
+
 .table__search {
   height: 80px;
   padding-top: 30px;
@@ -59,13 +66,29 @@ ul {
 
 .table__search_input {
   height: 30px;
-  width: 320px;
+  width: 380px;
   border-radius: 12px;
-  padding-left: 1px; }
+  padding-left: 10px; }
+
+.table__search_icon {
+  display: inline-block;
+  margin-left: -30px;
+  color: #E3E4E6; }
 
 .table__grid {
+  max-height: 80%;
+  overflow-y: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding-left: 20px;
   padding-right: 20px; }
+  .table__grid .glyphicon-triangle-bottom {
+    font-size: 0.5em; }
+
+.table__pager {
+  position: absolute;
+  bottom: 0;
+  right: 20px; }
 
 .app__top-menu {
   display: flex;
