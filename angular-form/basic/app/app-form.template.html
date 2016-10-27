@@ -1,0 +1,41 @@
+<div>
+    <form (ngSubmit)="onSubmit()" #appForm="ngForm">
+        <div class="form-group">
+            <label for="id">Id</label>
+            <input type="text" class="form-control" id="id"
+                   required
+                   [(ngModel)]="model.id" name="id"
+                   #id="ngModel" >
+            <div [hidden]="id.valid || id.pristine "
+                 class="alert alert-danger">
+                id is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name"
+                   required
+                   [(ngModel)]="model.name" name="name"
+                   #name="ngModel" >
+            <div [hidden]="name.valid || name.pristine"
+                 class="alert alert-danger">
+                name is required
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="type">Type</label>
+            <select class="form-control" id="type"
+                    required
+                    [(ngModel)]="model.type" name="type"
+                    #type="ngModel" >
+                <option *ngFor="let p of types" [value]="p.id">{{p.title}}</option>
+            </select>
+            <div [hidden]="type.valid || type.pristine" class="alert alert-danger">
+                type is required
+            </div>
+        </div>
+        <button type="submit" class="btn btn-default" [disabled]="!appForm.form.valid">Submit</button>
+    </form>
+
+</div>
