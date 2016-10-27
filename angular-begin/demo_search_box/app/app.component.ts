@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 @Component({
     selector: 'my-app',
     templateUrl: './app/app.component.tpl.html'
@@ -13,4 +13,5 @@ export class AppComponent {
     myvalueChange(event) {
         this.myresult = event.value;
     }
+
 }

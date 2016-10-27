@@ -1,4 +1,4 @@
-import {Component, Input, Output, EventEmitter} from "@angular/core";
+import {Component, Input, Output, EventEmitter, ViewChild, ElementRef} from "@angular/core";
 @Component({
     selector: 'search-box',
     templateUrl: './app/search-box/search-box.component.tpl.html'
@@ -6,11 +6,8 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
 export class SearchBoxComponent {
     @Input('myplaceholder') text:String;
     @Output() valueChange = new EventEmitter();
-
-
-    constructor() {
-
-    }
+    @ViewChild('myinput') input;
+    constructor() {}
 
     clear(input) {
         input.value = "";
@@ -19,5 +16,9 @@ export class SearchBoxComponent {
     inputChange(value) {
         console.log(value);
         this.valueChange.emit({value: value});
+    }
+
+    ngAfterViewInit() {
+        console.log(this.input.nativeElement);
     }
 }
