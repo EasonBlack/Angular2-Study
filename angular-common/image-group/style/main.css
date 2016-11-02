@@ -11,8 +11,14 @@ ul {
   height: 600px;
   border: 1px solid #ddd; }
 
-.image-group__list {
+.image-group__list-container {
   display: flex;
+  position: relative; }
+
+.image-group__list {
+  flex: 1;
+  display: flex;
+  position: relative;
   flex-direction: row;
   height: 96px;
   margin-top: 2px; }
@@ -28,7 +34,7 @@ ul {
 .image-group__image_item {
   display: flex;
   position: relative;
-  min-width: 96px;
+  width: 96px;
   margin: 2px;
   align-items: center;
   justify-content: center; }
@@ -38,14 +44,15 @@ ul {
 
 .image-group__button_item {
   display: flex;
-  position: relative;
+  position: absolute;
   align-items: center;
   justify-content: center;
   width: 96px;
-  margin: 2px;
+  height: 94px;
+  margin: 3px;
   background-color: #EBEDED;
   font-size: 2.5em;
-  z-inde: 1; }
+  z-index: 1; }
   .image-group__button_item input {
     position: absolute;
     left: 0;
@@ -59,5 +66,22 @@ ul {
     color: #808080; }
   .image-group__button_item:hover span {
     color: steelblue; }
+
+.image-group__more_item {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 20px;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  margin: 3px;
+  position: absolute; }
+
+.image-group__more_left {
+  left: 0; }
+
+.image-group__more_right {
+  right: 96px; }
 
 /*# sourceMappingURL=main.css.map */
