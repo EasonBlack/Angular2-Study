@@ -21,7 +21,8 @@ ul {
   position: relative;
   flex-direction: row;
   height: 96px;
-  margin-top: 2px; }
+  margin-top: 2px;
+  transition: all 300ms ease; }
 
 .image-group__select-container {
   position: relative;

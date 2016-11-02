@@ -1,0 +1,32 @@
+.group__item {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 12px;
+  background-color: #F7F7F7;
+  color: black;
+  font-size: 1.1em;
+  border-bottom: 1px solid #D9D9D9; }
+
+.table tbody tr:nth-last-child(1) {
+  border-bottom: 1px solid #D9D9D9; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.table {
+  margin-bottom: 0px; }
+
+ul {
+  list-style: none; }
+
+.app__container {
+  margin-left: 20px;
+  margin-top: 20px;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border: 1px solid #ddd;
+  overflow-y: scroll; }
+
+/*# sourceMappingURL=main.css.map */

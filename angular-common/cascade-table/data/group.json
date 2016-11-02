@@ -1,0 +1,30 @@
+[
+  {"id": 1, "name": "Ground","children": [
+    {"id": 11,"name": "Location 1"},
+    {"id": 12,"name": "Location 2"},
+    {"id": 13,"name": "Location 3"},
+    {"id": 14,"name": "Location 4"},
+    {"id": 15,"name": "Location 5"}
+  ]},
+  {"id": 2, "name": "Floor1", "children": [
+    {"id": 21,"name": "Location 1"},
+    {"id": 22,"name": "Location 2"},
+    {"id": 23,"name": "Location 3"},
+    {"id": 24,"name": "Location 4"},
+    {"id": 25,"name": "Location 5"}
+  ]},
+  {"id": 3, "name": "Floor2", "children": [
+    {"id": 31,"name": "Location 1"},
+    {"id": 32,"name": "Location 2"},
+    {"id": 33,"name": "Location 3"},
+    {"id": 34,"name": "Location 4"},
+    {"id": 35,"name": "Location 5"}
+  ]},
+  {"id": 4, "name": "Floor3", "children": [
+    {"id": 41,"name": "Location 1"},
+    {"id": 42,"name": "Location 2"},
+    {"id": 43,"name": "Location 3"},
+    {"id": 44,"name": "Location 4"},
+    {"id": 45,"name": "Location 5"}
+  ]}
+]
