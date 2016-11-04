@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+var path = require('path');
 
 module.exports = {
     entry: {
@@ -8,6 +8,7 @@ module.exports = {
         'app': './main.ts'
     },
     output: {
+        path: __dirname,
         publicPath: 'http://localhost:8080/',
         filename: '[name].js',
         chunkFilename: '[id].chunk.js'
@@ -15,9 +16,11 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.ts']
     },
+    devtool: 'cheap-module-eval-source-map',
     module: {
         loaders: [{
-            test: /\.ts/, loaders: ['ts-loader'], exclude: /node_modules/
+            test: /\.ts/,
+            loaders: ['awesome-typescript-loader', 'angular2-template-loader', 'angular2-router-loader']
         }]
     },
     plugins: [
@@ -27,11 +30,9 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             template: 'index.html'
-        }),
-
-        new BundleAnalyzerPlugin({
-            analyzerMode: 'server',
-            analyzerPort: 8888
         })
-    ]
+    ],
+    devServer: {
+        stats: 'minimal'
+    }
 };
