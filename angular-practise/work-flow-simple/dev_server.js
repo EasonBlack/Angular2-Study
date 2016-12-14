@@ -15,9 +15,9 @@ new WebpackDevServer(webpack(config), {
         aggregateTimeout: 300,
         poll: 1000
     }
-}).listen(8080, 'localhost', function (err, result) {
+}).listen(9001,function (err, result) {
     if (err) {
         return console.log(err);
     }
-    console.log('Listening at http://localhost:8080/');
+    console.log('Listening at http://localhost:9001/');
 });
